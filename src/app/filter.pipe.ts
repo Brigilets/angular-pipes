@@ -2,7 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
   name: 'filter',
-  //allows to add new server while filter is in place
+  //allows to add new server while filter is in place (forces update on each data change)
   pure: false,
 })
 export class FilterPipe implements PipeTransform {
