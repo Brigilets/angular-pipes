@@ -10,18 +10,18 @@
           <span class="badge">
             {{ server.status }}
           </span>
-          <strong>{{ server.name }}</strong> |
+          <strong>{{ server.name | shorten }}</strong> |
           {{ server.instanceType | uppercase }} |
           {{ server.started | date : "mediumDate" | uppercase }}
         </li>
       </ul>
-      <h5>Curency pipe examples</h5>
+      <!-- <h5>Curency pipe examples</h5>
       <p>{{ number | currency : "EUR" }}</p>
       <p>{{ number | currency : "EUR" : "code" }}</p>
       <p>
         {{ number | currency : "EUR" : "symbol-narrow" : "4.2-2" }}
       </p>
-      <p>{{ number | currency : "CLP" }}</p>
+      <p>{{ number | currency : "CLP" }}</p> -->
     </div>
   </div>
 </div>
